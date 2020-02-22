@@ -1,0 +1,13 @@
+
+.todo-container {
+  background-color: lightgrey;
+  width: 25%;
+}
+
+
+.todo {
+}
+
+.first {
+  font-weight: bold;
+}

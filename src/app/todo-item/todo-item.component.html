@@ -1,0 +1,6 @@
+<mat-checkbox
+  class="todo"
+  [ngClass]="{'done': todo.done}"
+  labelPosition="before"
+  [(ngModel)]="todo.done"
+>{{todo.name}}</mat-checkbox>
