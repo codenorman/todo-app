@@ -1,0 +1,8 @@
+<mat-checkbox [(ngModel)]="showDone">Show Done</mat-checkbox>
+
+<div class="todo-container" *ngFor="let todo of todos; index as i; even as isEven; first as isFirst">
+  <div *ngIf="showDone && todo.done || !todo.done">
+    {{i + 1}}
+    <app-todo-item [ngClass]="{'todo': isEven, 'first': isFirst}" class="" [todo]="todo"></app-todo-item>
+  </div>
+</div>
